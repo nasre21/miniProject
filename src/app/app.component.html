@@ -12,14 +12,14 @@
             <label for="numero2">Numero 2: </label>
             <input type="text"  class="form-control"[(ngModel)]="numero2" name="numero2"><br><br>
         </div>
-    
+    <div class="d-flex justify-content-center gap-5">
         <button class="btn btn-primary" (click)="sumar()">Sumar</button>
         <button class="btn btn-danger"  (click)="resta()">Resta</button>
     
-    
+    </div>
     
     
     </form>
     
-    <p>Resultado: {{resultado}}</p>
+    <p >Resultado: {{resultado}}</p>
 </div>
