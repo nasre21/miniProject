@@ -1,25 +1,25 @@
-<div class="container mt-5">
-    <h1>{{title}}</h1>
+<div class="container mt-5 ">
+    <h2 class="mb-5">{{title}}: </h2>
 
     <form>
-        <div class="form-group">
+        <div class="form-group d-flex gap-5 mb-5">
 
-        
+
             <label for="numero1">Numero 1: </label>
-            <input type="text" class="form-control" [(ngModel)]="numero1" name="numero1"><br><br>
+            <input type="text" class="form-control-lg" [(ngModel)]="numero1" name="numero1"><br><br>
         </div>
-        <div class="form-group">
+        <div class="form-group  d-flex gap-5">
             <label for="numero2">Numero 2: </label>
-            <input type="text"  class="form-control"[(ngModel)]="numero2" name="numero2"><br><br>
+            <input type="text"  class=" form-control-lg"[(ngModel)]="numero2" name="numero2"><br><br>
         </div>
-    <div class="d-flex justify-content-center gap-5">
+    <div class="d-flex gap-5 mt-5 btns">
         <button class="btn btn-primary" (click)="sumar()">Sumar</button>
         <button class="btn btn-danger"  (click)="resta()">Resta</button>
-    
+
     </div>
-    
-    
+
+
     </form>
-    
-    <p >Resultado: {{resultado}}</p>
+
+    <p class="fs-3 mt-5">Resultado: {{resultado}}</p>
 </div>
